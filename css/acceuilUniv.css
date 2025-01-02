@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*gestion du menu*/
+.menu{
+    width: 0px;
+    position: fixed;
+    margin: 0px;
+}
+#hamburger, #hamburge{
+    display: none;
+}
+#hamburger-logo{
+    display: block;
+    font-size: 20px;
+    background: #3b3939;
+    font-weight: bold;
+    font-style: italic;
+    width: 200px;
+    text-align: right;
+    cursor: pointer;
+    transform: translateX(-162px);
+    padding: 10px;
+    color: aliceblue;
+}
+#hamburger-logo img{
+    width: 30px;
+    height: 30px;
+    padding-bottom: -10px;
+    margin-bottom: -8px;
+}
+/*gestion de la navigation*/
+nav{
+    display: flex;
+    flex-direction: column;
+    background: #3b3939;
+    overflow: hidden;
+    width: 200px;
+    transform: translateX(-250px);
+}
+#hamburger-logo, nav, body{
+    transition: 0.7s;
+}
+#hamburger:checked ~ #hamburger-logo,
+#hamburger:checked ~ nav{
+    transform: translate(0);
+}
+#hamburge:checked ~ body{
+    transform: translate(-168px);
+}
+nav a{
+    text-decoration: none;
+    text-align: justify;
+    color: wheat;
+    padding: 15px;
+
+}
+nav a:hover{
+    background: #444;
+}
+
+
+/*gestion de l'en-tete*/
+header{
+    background-color: rgb(122, 122, 117);
+    width: 100vw;
+    padding: 5px;
+    color: aliceblue;
+    position: static;    
+}
+header h1{
+    text-align: center;
+    margin-top: 5px;
+}
+
+/*separateur bleu*/
+.separateur{
+    background-color: rgb(74, 74, 211);
+    width: auto;
+    height: 3px;
+}
+
+
+/*Mise en forme universités*/
+.université1{
+    background-color: rgb(158, 158, 155);
+    color: #3b3939;
+    padding: 3px;
+    letter-spacing: 1px;  
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+legend{
+    color: red;
+}
+.UniverImage1 p{
+    text-align: justify;
+    display: flex;
+}
+.UniverImage1 img{
+    width: 200px;
+    height: 200px;
+    padding: 3px;
+    box-shadow: 3px 0px 5px black;
+}
+
+/*Mise en forme Institut*/
+.Instituts{
+    background-color: rgb(192, 192, 192);
+    padding: 3px;
+    margin: auto;
+    color: rgb(42, 43, 44);
+    font-family: Georgia, 'Times New Roman', Times, sans-serif;
+    margin-top: 5px;
+    border-radius: 5px 5px 0px 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.InstitutImage p{
+    text-align: justify;
+    display: flex;
+}
+.InstitutImage img{
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    box-shadow: 3px 2px 15px black;
+}
+
+/*gestion de l'animation des photo universite*/
+
+/*Mise en forme Pied du page*/
+.InfoSite{
+    background-color: rgb(69, 57, 179);
+    padding: 3px;
+    margin: auto;
+    color: blanchedalmond;
+    margin-top: -20;
+    border-radius: 0px 0px 5px 5px;
+    padding: 10px;
+    font-family: 'Tahoma', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.InfoSite a{
+    color: aqua;
+    text-decoration: none;
+}
+.InfoSite li{
+    list-style-type: none;
+}
+.InfoSite img{
+    border-radius: 5px;
+}
+.InfoSite p{
+    text-align: left;
+    letter-spacing: 2px;
+}
+.InfoSite .copy{
+    text-align: center;
+}
+.Reseaux{
+    display: inline-flex;
+    width: 50px;
+}
+.Reseaux img{
+    width: 35px;
+    padding-right: 10px;
+}
